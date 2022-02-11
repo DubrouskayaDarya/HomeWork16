@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Email" representedClassName="Email" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="email" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Email"/>
+        <relationship name="phone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Phone"/>
+    </entity>
+    <entity name="Phone" representedClassName="Phone" syncable="YES" codeGenerationType="class">
+        <attribute name="phone" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-272.828125" positionY="-94.671875" width="128" height="103"/>
+        <element name="Email" positionX="-93.70703125" positionY="-87.3515625" width="128" height="58"/>
+        <element name="Phone" positionX="-116.0234375" positionY="48.46875" width="128" height="44"/>
+    </elements>
+</model>
